@@ -1,0 +1,58 @@
+/*------------------------------------------ ||[ CSS - home.jsx ]|| ----------------------------------------*/
+
+/* --------------------------------------- [ MOBILE FIRST ] ----------------------------------------- */
+
+/*| ---------|- Page d'accueil -|-------- |*/
+
+/*||- Titre -||*/
+.homeMainDiv{
+  min-height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width: 100%;
+
+.homeTitleBlock{
+    display: flex;
+    max-width:80%;
+    height:auto;
+    align-items:center;
+    justify-content:center;
+    min-height: 35vh;
+    border : 2px double rgb(5, 173, 165);
+    border-radius:50%;
+    padding: 14.5%  5%  14.5%  5%;        
+  }
+  
+  .homeMainTitle{
+  font-size: var(--fontSizeH1);
+  color:var(--primaryColor);
+  font-family: var(--fontFamilyTitle);
+  }
+
+}
+
+/* --------------------------------------- [ TABLETTES / KINDLES ] ----------------------------------------- */
+
+@media screen and (min-width: 768px){
+  .homeTitleBlock{ max-width:35%;}
+   
+}
+
+/* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
+
+@media screen and (min-width: 1080px){
+  .homeTitleBlock{min-height: 40vh;}
+}
+
+/* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
+
+@media screen and (min-width: 1400px){
+
+}
+
+/* ---------------------------------------- [ LARGE SCREEN - HD ] ------------------------------------------ */
+
+@media screen and (min-width: 1600px){
+
+}
