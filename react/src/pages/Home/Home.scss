@@ -1,58 +1,67 @@
-/*------------------------------------------ ||[ CSS - home.jsx ]|| ----------------------------------------*/
-
 /* --------------------------------------- [ MOBILE FIRST ] ----------------------------------------- */
 
 /*| ---------|- Page d'accueil -|-------- |*/
 
 /*||- Titre -||*/
-.homeMainDiv{
+.homeMainDiv {
   min-height: 100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-
-.homeTitleBlock{
-    display: flex;
-    max-width:80%;
-    height:auto;
-    align-items:center;
-    justify-content:center;
-    min-height: 35vh;
-    border : 2px double rgb(5, 173, 165);
-    border-radius:50%;
-    padding: 14.5%  5%  14.5%  5%;        
-  }
-  
-  .homeMainTitle{
-  font-size: var(--fontSizeH1);
-  color:var(--primaryColor);
-  font-family: var(--fontFamilyTitle);
-  }
-
 }
 
-/* --------------------------------------- [ TABLETTES / KINDLES ] ----------------------------------------- */
+.homeTitleCircleBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 0;
+  padding: 22.5%;
+  border: 2px double rgb(5, 173, 165);
+  border-radius: 50%;   
+}
 
-@media screen and (min-width: 768px){
-  .homeTitleBlock{ max-width:35%;}
-   
+.homeMainTitle {
+  font-size: var(--fontSizeH1);
+  color: var(--primaryColor);
+  font-family: var(--fontFamilyTitle);
+}
+
+/* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .homeTitleCircleBlock {
+    width: 30%;
+    padding: 17%;
+  }
 }
 
 /* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
 
-@media screen and (min-width: 1080px){
-  .homeTitleBlock{min-height: 40vh;}
+@media screen and (min-width: 1080px) {
+  .homeTitleCircleBlock {
+    min-width: 280px;
+    width: 20%;
+    padding: 11.7%;
+  }
 }
 
 /* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
 
-@media screen and (min-width: 1400px){
-
+@media screen and (min-width: 1400px) {
+  .homeTitleCircleBlock {
+    min-width: 280px;
+    width: 15%;
+    padding: 10.5%;
+  }
 }
 
 /* ---------------------------------------- [ LARGE SCREEN - HD ] ------------------------------------------ */
 
-@media screen and (min-width: 1600px){
-
+@media screen and (min-width: 1600px) {
+  .homeTitleCircleBlock {
+    width: 10%;
+    padding: 7.8%;
+  }
 }
