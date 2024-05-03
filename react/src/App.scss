@@ -3,17 +3,17 @@
 /*| ---------|- import google fonts -|-------- |*/
 
 @import url("https://fonts.googleapis.com/css2?family=Inder&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 
 /*| ---------|- Variables CSS -|-------- |*/
 
 :root {
-  --primaryColor: white;
+  --primaryColor: rgba(255, 255, 255, 0.733);
   --secondaryColor: #c3b48a;
 
-  --fontFamilyText: "Poppins", sans-serif;
-  --fontFamilyTitle: "Holtwood One SC", serif;
+  --fontFamilyText: "Poppins","Arial",sans-serif;
+  --fontFamilyTitle: "Roboto", "Calibri";
 
   --fontSizeH1: clamp(3rem, 7vw + 1rem, 5rem);
   --fontSizeH2: clamp(1.8rem, 4vw + 1rem, 3rem);
