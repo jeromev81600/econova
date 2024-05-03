@@ -4,8 +4,10 @@ function Home() {
 
   return (
     <div className='homeMainDiv'>
-    <div className='homeTitleCircleBlock'>
+    <div className='homeTitleBlock'>
+    <div className='homeTitleCircle'>
       <h1 className='homeMainTitle'>Econova</h1>
+    </div>
     </div>
     </div>
   )

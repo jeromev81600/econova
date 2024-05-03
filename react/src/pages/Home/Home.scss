@@ -9,16 +9,23 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-}
 
-.homeTitleCircleBlock {
+
+.homeTitleBlock{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 45%;
+  filter: drop-shadow(0 0 0.75rem rgb(13, 201, 207));
+  
+.homeTitleCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
   height: 0;
-  padding: 22.5%;
-  border: 2px double rgb(5, 173, 165);
+  padding: 32.5%;
+  background : url("../../assets/img/planet.png");
+  background-size:100%;
   border-radius: 50%;   
 }
 
@@ -26,42 +33,31 @@
   font-size: var(--fontSizeH1);
   color: var(--primaryColor);
   font-family: var(--fontFamilyTitle);
+  text-shadow: whitesmoke 1px 0 10px;
+}
+}
 }
 
 /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
 
 @media screen and (min-width: 768px) {
-  .homeTitleCircleBlock {
-    width: 30%;
-    padding: 17%;
-  }
+ 
 }
 
 /* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
 
 @media screen and (min-width: 1080px) {
-  .homeTitleCircleBlock {
-    min-width: 280px;
-    width: 20%;
-    padding: 11.7%;
-  }
+
 }
 
 /* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
 
 @media screen and (min-width: 1400px) {
-  .homeTitleCircleBlock {
-    min-width: 280px;
-    width: 15%;
-    padding: 10.5%;
-  }
+
 }
 
 /* ---------------------------------------- [ LARGE SCREEN - HD ] ------------------------------------------ */
 
 @media screen and (min-width: 1600px) {
-  .homeTitleCircleBlock {
-    width: 10%;
-    padding: 7.8%;
-  }
+ 
 }
