@@ -11,7 +11,7 @@ function Home() {
           </div>
         </div>
         <div className='homeTextBlock'>
-          <p className='homeText'>En construction<br/><br/> Logos</p> 
+          <p className='homeText'> - En construction -<br/><br/> Création du Logo</p> 
         </div>
     </div>
   )
