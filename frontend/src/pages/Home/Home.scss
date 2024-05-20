@@ -1,0 +1,97 @@
+/* --------------------------------------- [ MOBILE FIRST ] ----------------------------------------- */
+
+/*| ---------|- Page d'accueil -|-------- |*/
+
+/*||- Titre -||*/
+.homeMainDiv {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:5rem;
+  width: 100%;
+
+  .line{ border: 1px solid whitesmoke;
+  width:45%;}
+
+.homeTitleBlock{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(15rem, 36.5vw + 1rem, 26.4rem);
+  filter: drop-shadow(0 0 0.75rem rgb(13, 201, 207));
+  
+.homeTitleCircle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 0;
+  padding: 32%;
+  background : url("../../assets/img/planet.png");
+  background-size:cover;
+  border-radius: 50%;   
+}
+
+.homeMainTitle {
+  font-size: var(--fontSizeH1);
+  color: var(--primaryColor);
+  font-family: var(--fontFamilyTitle);
+  text-shadow: whitesmoke 1px 0 10px; 
+}
+
+.homeMainSubTitle{
+  color:var(--primaryColor);
+  font-size: var(--fontSizeH3);
+  font-family: var(--fontFamilyText);
+  text-shadow: whitesmoke 1px 0 10px; 
+  padding-top:0.2em;
+}
+}
+
+.homeTextBlock{
+ border-top: 1px solid whitesmoke;
+ border-bottom: 1px solid whitesmoke;
+ border-radius: 5px;
+
+.homeText{
+  color:var(--primaryColor);
+  font-size: var(--fontSizeText);
+  font-family: var(--fontFamilyText);
+  text-align: center;
+  padding:5%;
+  width: clamp(15rem, 36.5vw + 1rem, 28rem);
+}}
+}
+
+/* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
+
+@media screen and (min-width: 768px) {
+  
+  .homeMainDiv {
+      gap:8rem;
+
+  
+  .homeTitleBlock{
+   width: 20rem;}
+}}
+
+/* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
+
+@media screen and (min-width: 1080px) {
+  
+}
+
+/* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
+
+@media screen and (min-width: 1400px) {
+
+}
+
+/* ---------------------------------------- [ LARGE SCREEN - HD ] ------------------------------------------ */
+
+@media screen and (min-width: 1600px) {
+ 
+}
