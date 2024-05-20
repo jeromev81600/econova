@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-     <Router>
+     <Router basename="/econova">
      <div className="App">
        <Routes>
          <Route path="/" element={<Home />} />  
