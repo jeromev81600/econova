@@ -12,39 +12,215 @@
   gap:5rem;
   width: 100%;
 
-.homeTitleBlock{
+.logosSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:7.5rem;
+  flex-wrap: wrap;
+  width:90%;
+  height: auto;
+
+.homeLogoBlock1{
   display: flex;
   align-items: center;
   justify-content: center;
   width: clamp(15rem, 36.5vw + 1rem, 26.4rem);
   filter: drop-shadow(0 0 0.75rem rgb(13, 201, 207));
   
-.homeTitleCircle {
+.homeTitleCircle1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 40%;
   height: 0;
-  padding: 32%;
+  padding: 31%;
   background : url("../../assets/img/planet.png");
   background-size:cover;
   border-radius: 50%;   
 }
 
-.homeMainTitle {
+.homeMainTitle1 {
   font-size: var(--fontSizeH1);
   color: var(--primaryColor);
   font-family: var(--fontFamilyTitle);
   text-shadow: whitesmoke 1px 0 10px; 
 }
 
-.homeMainSubTitle{
+.homeMainSubTitle1{
   color:var(--primaryColor);
   font-size: var(--fontSizeH3);
   font-family: var(--fontFamilyText);
   text-shadow: whitesmoke 1px 0 10px; 
   padding-top:0.2em;
+}
+}
+
+.homeLogoBlock2{
+  display: flex;
+  align-items: center;
+  position:relative;
+  justify-content: center;
+  width: clamp(15rem, 36.5vw + 1rem, 26.4rem);
+  filter: drop-shadow(0 0 0.75rem rgb(13, 201, 207));
+  
+  .compass{
+    position:absolute;
+    z-index: 3;
+    width: 70%;
+  }
+
+.homeTitleCircle2 {
+  display: flex;
+  opacity:0.5;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 0;
+  padding: 31%;
+  background : url("../../assets/img/planet.png");
+  background-size:cover;
+  border-radius: 50%;   
+}
+.homeTitleblock2{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+  z-index: 3;
+
+  .homeMainTitle2 {
+  font-size: var(--fontSizeH1);
+  color: var(--primaryColor);
+  font-family: var(--fontFamilyTitle);
+  text-shadow: whitesmoke 1px 0 10px; 
+}
+
+.homeMainSubTitle2{
+  color:var(--primaryColor);
+  font-size: var(--fontSizeH3);
+  font-family: var(--fontFamilyText);
+  text-shadow: whitesmoke 1px 0 10px; 
+  padding-top:0.2em;
+}
+}
+}
+
+.homeLogoBlock3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(15rem, 36.5vw + 1rem, 26.4rem);
+  margin:0 200px 0 200px ;
+  filter: drop-shadow(0 0 0.75rem rgb(13, 201, 207));
+  
+  .compass2{
+    position:absolute;
+    z-index: 1;
+    width: 60%;
+  }
+
+.homeTitleCircle3 {
+  display: flex;
+  opacity:0.8;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 0;
+  padding: 25%;
+  background : url("../../assets/img/planet.png");
+  background-size:cover;
+  border-radius: 50%;  
+  margin:4%; 
+}
+
+  .homeMainTitle3 {
+  font-size: clamp(1.8rem, 4vw + 1rem, 5rem);;
+  color: var(--primaryColor);
+  font-family: var(--fontFamilyTitle);
+  text-shadow: whitesmoke 1px 0 10px; 
+}
+
+.homeMainSubTitle3{
+  font-size: clamp(1.8rem, 4vw + 1rem, 5rem);;
+  color: var(--primaryColor);
+  font-family: var(--fontFamilyTitle);
+  text-shadow: whitesmoke 1px 0 10px; 
+}
+}
+
+.homeLogoBlock4{
+  display: flex;
+  align-items: center;
+  position:relative;
+  justify-content: center;
+  height:50 em;
+  width: clamp(15rem, 36.5vw + 1rem, 26.4rem);
+  filter: drop-shadow(0 0 0.75rem rgb(13, 201, 207));
+  
+  .compass3{
+    width: 50%;
+    position:absolute;
+    z-index: 4;
+  }
+
+.homeTitleCircle4 {
+  display: flex;
+  opacity:0.5;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 0;
+  padding: 45%;
+  background : url("../../assets/img/planet.png");
+  background-size:cover;
+  border-radius: 50%;   
+}
+
+.homeTitleCircle4bis {
+  display: flex;
+  opacity:0.5;
+  position:absolute;
+  z-index: 2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 0;
+  padding: 35%;
+  border:1px solid whitesmoke;
+  border-radius: 50%;   
+}
+
+.homeTitleblock4{
+  display:flex;
+  position:absolute;
+  z-index: 3;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .homeMainTitle4 {
+  font-size: var(--fontSizeH2);
+  color: var(--primaryColor);
+  font-family: var(--fontFamilyTitle);
+  text-shadow: whitesmoke 1px 0 10px; 
+}
+
+.homeMainSubTitle4{
+  color:var(--primaryColor);
+  font-size: var(--fontSizeH3);
+  font-family: var(--fontFamilyText);
+  text-shadow: whitesmoke 1px 0 10px; 
+  padding-top:4.5em;
+}
+}
 }
 }
 
@@ -71,7 +247,7 @@
       gap:8rem;
 
   
-  .homeTitleBlock{
+  .homeLogoBlock1,.homeLogoBlock2,.homeLogoBlock3{
    width: 20rem;}
 }}
 
@@ -84,7 +260,6 @@
 /* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
 
 @media screen and (min-width: 1400px) {
-
 }
 
 /* ---------------------------------------- [ LARGE SCREEN - HD ] ------------------------------------------ */
