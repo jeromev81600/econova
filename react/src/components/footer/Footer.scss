@@ -1,0 +1,51 @@
+/*------------------------------------------ ||[ CSS - footer.jsx ]|| ----------------------------------------*/
+
+/* --------------------------------------- [ MOBILE FIRST ] ----------------------------------------- */
+
+/*| ---------|- Page d'accueil -|-------- |*/
+
+/*||- Titre -||*/
+.footerDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 4em;
+    background-color: black;
+    padding-left:1em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    .copyright {
+        color: var(--primaryColor);
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-right:5px;
+      }
+  }
+  
+ /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
+
+@media screen and (min-width: 768px) {
+
+}
+
+/* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
+
+@media screen and (min-width: 1080px) {
+ 
+}
+
+/* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
+
+@media screen and (min-width: 1400px) {
+}
+
+/* ---------------------------------------- [ LARGE SCREEN - HD ] ------------------------------------------ */
+
+@media screen and (min-width: 1600px) {
+ 
+}
+
+  
