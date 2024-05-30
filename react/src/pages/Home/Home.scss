@@ -1,15 +1,14 @@
+/*------------------------------------------ ||[ CSS - Home.jsx ]|| ----------------------------------------*/
+
 /* --------------------------------------- [ MOBILE FIRST ] ----------------------------------------- */
 
 /*| ---------|- Page d'accueil -|-------- |*/
 
 /*||- Titre -||*/
 .homeMainDiv {
-  min-height: 100vh;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap:5rem;
   width: 100%;
 
 .logosSection{
@@ -20,15 +19,7 @@
   flex-wrap: wrap;
   width:90%;
   height: auto;
-
-  @keyframes shine { 
-    0% {
-        transform:translateX(-100%) translateY(-100%) rotate(30deg);
-    }
-    80% {transform:translateX(-100%) translateY(-100%) rotate(30deg);}
-    100% {transform:translateX(100%) translateY(100%) rotate(30deg);}
-  }
-  
+ 
 .homeLogoBlock{
   display: flex;
   flex-direction: column;
@@ -61,15 +52,20 @@
 }
 
 .homeTextBlock{
- border-top: 1px solid whitesmoke;
- border-bottom: 1px solid whitesmoke;
- border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  border-radius: 5px;
+  max-width:50%;
 
 .homeText{
-  color:var(--primaryColor);
+  color:black;
   font-size: var(--fontSizeText);
   font-family: var(--fontFamilyText);
-  text-align: center;
+  font-weight: bold;
   padding:5%;
   width: clamp(15rem, 36.5vw + 1rem, 28rem);
 }}
@@ -78,10 +74,7 @@
 /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
 
 @media screen and (min-width: 768px) {
-  
-  .homeMainDiv {
-      gap:8rem;
-  }
+
 }
 
 /* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */

@@ -1,0 +1,59 @@
+/*------------------------------------------ ||[ CSS - navbar.jsx ]|| ----------------------------------------*/
+
+/* --------------------------------------- [ MOBILE FIRST ] ----------------------------------------- */
+
+/*| ---------|- Page d'accueil -|-------- |*/
+
+/*||- Titre -||*/
+.navbarDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    max-height: 9em;
+    padding: 0.5em 0 0.5em 1em;
+    top: 0;
+    left: 0;
+
+    .linksBlock{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap:2em;
+        padding:5%;
+
+        .titleLinks{
+            font-size: var(--fontSizeH2);
+            font-family: var(--fontFamilyText);
+            color:var(--primaryColor);
+        }
+    }
+
+    
+  }
+  /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
+
+@media screen and (min-width: 768px) {
+   
+}
+
+/* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
+
+@media screen and (min-width: 1080px) {
+    .navbarDiv {
+        padding: 0 0 0 2em;
+    }
+}
+
+/* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
+
+@media screen and (min-width: 1400px) {
+}
+
+/* ---------------------------------------- [ LARGE SCREEN - HD ] ------------------------------------------ */
+
+@media screen and (min-width: 1600px) {
+ 
+}
