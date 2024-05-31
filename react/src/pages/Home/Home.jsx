@@ -8,7 +8,11 @@ function Home() {
     <div className='homeMainDiv'>
       <Navbar/>
         <div className='homeTextBlock'>
-          <p className='homeText'> - Page en construction -<br/></p> 
+          <h1>Accueil</h1>
+         <p class="homeText">Bienvenu sur le site d’ECONOVA PRODUCTION,<br/> le média international engagé sur les sujets environnementaux et sociétaux.</p>
+         <div className='homeBuildBlock'>
+          <p className='homeBuildText'> - Page en construction -<br/></p> 
+          </div>
         </div>
         <Footer/>
     </div>
