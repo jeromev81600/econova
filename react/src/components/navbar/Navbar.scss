@@ -17,14 +17,14 @@
     top: 0;
     left: 0;
 
-    .linksBlock{
+    .navbarLinksBlock{
         display: flex;
         align-items: center;
         justify-content: flex-end;
         gap:2em;
         padding:5%;
 
-        .titleLinks{
+        .navbartitleLinks{
             font-size: var(--fontSizeH2);
             font-family: var(--fontFamilyText);
             color:var(--primaryColor);

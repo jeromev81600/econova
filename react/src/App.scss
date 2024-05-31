@@ -14,6 +14,8 @@
   --primaryColor: rgba(255, 255, 255, 0.733);
   --secondaryColor: #c3b48a;
 
+   --bgBlur: blur(8px);
+
   --fontFamilyText: "Inter","Poppins","Arial",sans-serif;
   --fontFamilyTitle: "Michroma","Roboto", "Calibri";
 
@@ -38,17 +40,31 @@
   background-size: 100% cover;
 }
 
+/*| ---------|- Eléments principaux -|-------- |*/
+
 .App > * {
   flex: 1; /* S'étend pour remplir l'espace disponible */
   display: flex;
   justify-content: center;
   align-items: center;
+
+  h1{
+    color:var(--primaryColor);
+    font-size:var(--fontSizeH1);
+    font-family: var(--fontFamilyTitle);
+    text-transform: uppercase;
+  }
+
+  p{
+    color:var(--primaryColor);
+    font-family:var( --fontFamilyText);
+    font-size:var(--fontSizeText);
+    letter-spacing: 0.1rem;
+    line-height :1.5rem;
+    font-weight:600
+  }
+
+  .links{text-decoration: none;}
 }
 
-/*| ---------|- Eléments principaux -|-------- |*/
 
-p{
-  color:var(--primaryColor);
-  font-family:var( --fontFamilyText);
-  font-size:var(--fontSizeText);
-}
