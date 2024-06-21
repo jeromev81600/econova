@@ -11,47 +11,16 @@
   justify-content: center;
   width: 100%;
 
-.logosSection{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap:7.5rem;
-  flex-wrap: wrap;
-  width:90%;
-  height: auto;
- 
-.homeLogoBlock{
+.homeTextBlock{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width:  clamp(5em, 9vw, 8.5rem);
-  border: 1px solid whitesmoke;
-  padding:0.5em 0 0.5em 0;
-  gap:5px;
-  
-  .compass{
-    width:  clamp(4em, 8vw, 8rem);
-     }
+  text-align: center;
+  padding:2em;
+  gap:3em;
 
-  .homeMainTitle {
-  font-size:clamp(0.5em, 1vw, 1em);
-  color: var(--primaryColor);
-  font-family: var(--fontFamilyTitle);
-  text-transform: uppercase;
-  text-shadow: whitesmoke 1px 0 10px; 
-}
-
-.homeMainSubTitle{
-  color:var(--primaryColor);
-  font-size:clamp(0.5em, 1vw, 0.9em);
-  font-family: var(--fontFamilyText);
-  text-shadow: whitesmoke 1px 0 10px; 
-}
-}
-}
-
-.homeTextBlock{
+.homeBuildBlock{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,7 +30,7 @@
   border-radius: 5px;
   max-width:50%;
 
-.homeText{
+.homeBuildText{
   color:black;
   font-size: var(--fontSizeText);
   font-family: var(--fontFamilyText);
@@ -69,7 +38,7 @@
   padding:5%;
   width: clamp(15rem, 36.5vw + 1rem, 28rem);
 }}
-}
+}}
 
 /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
 

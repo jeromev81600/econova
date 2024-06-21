@@ -1,20 +1,44 @@
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from '../logo/Logo';
-import './Navbar.scss'
+import hut from "../../assets/icons/home.png";
+import './Navbar.scss';
 
-function Navbar() {
+export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
-    <div className='navbarDiv'>
-        <Logo/>
-        <div class="linksBlock">
-         <h2 class="titleLinks">Comprendre</h2>
-         <h2 class="titleLinks">S'adapter</h2>
-         <h2 class="titleLinks">Agir</h2>
-         <h2 class="titleLinks">Adhérer</h2>
-         <h2 class="titleLinks">Contact</h2>
-        </div>
-    </div>
-  )
+    <nav className="navBar">
+      <Logo />
+      <button type="button" className="burger-menu" onClick={toggleMenu}>
+        <span className={`bar ${isMenuOpen ? "open" : ""}`} />
+        <span className={`bar ${isMenuOpen ? "open" : ""}`} />
+        <span className={`bar ${isMenuOpen ? "open" : ""}`} />
+      </button>
+      <ul className={`navbarLinksBlock ${isMenuOpen ? "open" : ""}`}>
+        <li className="links">
+          <Link to="/understand"><h2 className="navbartitleLinks">Comprendre</h2></Link>
+        </li>
+        <li className="links">
+          <Link to="/adapt"><h2 className="navbartitleLinks">S'adapter</h2></Link>
+        </li>
+        <li className="links">
+          <Link to="/act"><h2 className="navbartitleLinks">Agir</h2></Link>
+        </li>
+        <li className="links">
+          <Link to="/adhere"><h2 className="navbartitleLinks">Adhérer</h2></Link>
+        </li>
+        <li className="links">
+          <Link to="/contact"><h2 className="navbartitleLinks">Contact</h2></Link>
+        </li>
+        <li className="links">
+          <Link to="/"> <img src={hut} alt="home" /></Link>
+        </li>
+      </ul>
+    </nav>
+  );
 }
-
-export default Navbar;
