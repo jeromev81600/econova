@@ -22,7 +22,7 @@
        }
   
     .homeMainTitle {
-    font-size:clamp(0.4em, 0.25vw, 0.6em);
+    font-size:clamp(0.5em, 0.25vw, 0.8em);
     color: var(--primaryColor);
     font-family: var(--fontFamilyTitle);
     text-transform: uppercase;
@@ -43,16 +43,16 @@
 @media screen and (min-width: 768px) {
   .logoDiv{
     width:  clamp(5em, 9vw, 5rem);
-    padding:0.5em 0 0.1em 0;
     max-height:7.5em;
-    gap:5px;
    
     .homeMainTitle {
-      font-size:clamp(0.5em, 0.7vw, 0.6em);
+      font-size:0.6em;
+      margin-top:0.4em;
       }
   
   .homeMainSubTitle{
     font-size:clamp(0.5em, 1vw, 0.5em);
+    margin-bottom:0.8em;
   }
   }
 }
