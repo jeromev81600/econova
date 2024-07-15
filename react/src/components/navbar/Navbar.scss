@@ -28,14 +28,18 @@
       &.open {
         display: flex;
         position: fixed;
-        top: 70px;
-        left: 0;
+        top: 110px;
+        right: 0;
         background-color: black;
-        width: 100vw;
-        height: calc(100vh - 70px);
+        width: 30vw;
+        min-width: 130px;
+        height: calc(35vh - 70px);
         z-index: 5;
+        gap:1em;
+        border-radius: 5px;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        align-items: center;    
   
         .links {
           display: flex;
@@ -94,10 +98,13 @@
   
   @media screen and (min-width: 768px) {
     .navBar {
-      padding: 0.5em 2em;   
-    }
+      padding: 0.5em 2em;        
+      .navbarLinksBlock {
+        &.open {
+          height: calc(40vh - 70px);
+      }
   }
-  
+}}
   /* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
   
   @media screen and (min-width: 1080px) {
@@ -110,10 +117,9 @@
         justify-content: flex-end;
         width: 80%;
         gap: 2rem;
-  
+
         .links {
           display: flex;
-         
         }
       }
   
