@@ -23,7 +23,7 @@
 
   --fontSizeH1: clamp(0.5rem, 2vw + 0.5rem, 1.7rem);
   --fontSizeH2: clamp(0.5rem, 2vw + 0.5rem, 1.4rem);
-  --fontSizeText: clamp(12px, 2vw + 0.5rem, 1.1rem);
+  --fontSizeText: clamp(0.5rem, 1vw + 0.5rem, 0.95rem);
 }
 
 /*| ---------|- Format pages principales -|-------- |*/
@@ -49,12 +49,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding:10em 2em 0 2em;
 
   h1{
     color:var(--primaryColor);
     font-size:var(--fontSizeH1);
     font-family: var(--fontFamilyTitle);
     text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  h2{
+    color:var(--primaryColor);
+    font-size:var(--fontSizeH2);
+    font-family: var(--fontFamilyTitle);
   }
 
   p,a {
@@ -69,4 +77,27 @@
   a{text-decoration: none;}
 }
 
+ /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
+  
+ @media screen and (min-width: 768px) {
+  }
+
+/* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
+
+@media screen and (min-width: 1080px) {
+  .App > * {
+    padding:13em 10em 15em 10em;
+  }
+}
+
+/* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
+
+@media screen and (min-width: 1400px) {
+}
+
+/* ---------------------------------------- [ LARGE SCREEN - HD ] ------------------------------------------ */
+
+@media screen and (min-width: 1600px) {
+ 
+}
 
