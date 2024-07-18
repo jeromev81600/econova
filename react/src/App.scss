@@ -44,7 +44,11 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  background: url("./assets/img/mer.jpg");
+  background: linear-gradient(
+    141.47deg,
+    rgb(13, 185, 197)  3.84%,
+    rgb(20, 158, 151)  93.65%
+  );
   background-size: 100% cover;
 }
 
