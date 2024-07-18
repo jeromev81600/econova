@@ -20,6 +20,11 @@
   padding-top: 2em;
   gap:3em;
 
+  .line{
+    border:1px solid var(--primaryColor);
+    width:20em;
+  }
+
   .homeTitle{
     font-family: var(--fontFamilyHome);
     font-size:clamp(2.5rem, 3vw + 0.5rem, 4.7rem);

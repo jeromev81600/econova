@@ -17,7 +17,7 @@
    --bgBlur: blur(8px);
    --bgGradient:  linear-gradient(
     141.47deg,
-    rgba(34, 34, 34, 0.288) 3.84%,
+    rgba(34, 34, 34, 0.13) 3.84%,
     rgba(8, 53, 71, 0.342) 93.65%
   );
    --shadow: 0px 5px 6px 2px rgba(18, 17, 11, 0.3);;
@@ -76,7 +76,7 @@
   }
 
   p,a {
-    color:var(--primaryColor);
+    color:black;
     font-family:var( --fontFamilyText);
     font-size:var(--fontSizeText);
     letter-spacing: 0.1rem;
@@ -84,7 +84,8 @@
     font-weight:600
   }
 
-  a{text-decoration: none;}
+  a{text-decoration: none;
+    color:var(--primaryColor);}
 }
 
  /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
@@ -96,7 +97,7 @@
 
 @media screen and (min-width: 1080px) {
   .App > * {
-    padding:13em 10em 15em 10em;
+    padding:13em 13em 10em 13em;
   }
 }
 

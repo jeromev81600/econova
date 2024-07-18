@@ -9,7 +9,7 @@ function Understand() {
     <div className='understandMainDiv'>
       <Navbar/>
       <h1>Comprendre et apprendre</h1>
-        <div className='understandContentBlocks'>
+        <section className='understandContentSection'>
           <div className="understandTextBlocks">
              <h2>Nos sources d'inspiration</h2>
              <p>Et si on vérifiait la cohérence et la véracité des connaissances scientifiques sur le terrain ?</p>
@@ -39,7 +39,7 @@ function Understand() {
               ))}
             </ul>
           </div>
-        </div>     
+        </section>     
         <Footer/>
     </div>
   )
