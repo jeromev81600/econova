@@ -27,9 +27,12 @@
         justify-content: flex-start;
         align-items:flex-start;
         border:1px solid var(--primaryColor);
-        background-color: var(--bgBlur);
+        backdrop-filter: var(--bgBlur);
+        background:var(--bgGradient);
+        box-shadow: var(--shadow);
         border-radius: 5px;
         max-width: 20em;
+        min-height: 28.5em;
         padding: 2em;
         gap:1em;
 
