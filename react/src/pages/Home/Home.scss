@@ -6,12 +6,13 @@
 
 /*||- Titre -||*/
 .homeMainDiv {
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
 
-  p{text-align: center;}
+  .homeText{text-align: center;}
 
   .homeTitle{
     font-family: var(--fontFamilyHome);
@@ -45,7 +46,7 @@
 /* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
 
 @media screen and (min-width: 1400px) {
-  .homeMainDiv p{
+  .homeMainDiv .homeText{
     width: 65%;
    }
 }

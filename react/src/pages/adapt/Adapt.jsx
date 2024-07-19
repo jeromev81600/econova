@@ -10,7 +10,7 @@ function Adapt() {
     <div className='adaptMainDiv'>
       <Navbar/>
       <h1>Conséquences et résilience</h1>
-      <p>Quelles projections pour le futur ?<br/><br/>Face à la multiplication des phénomènes climatiques extrêmes, à une raréfaction annoncée de certaines ressources et à l’accroissement des inégalités, des individus et des collectifs, publics ou privés, se mobilisent pour préserver notre patrimoine naturel et nous préparer à différents scénarios.</p>
+      <p className="adaptText">Quelles projections pour le futur ?<br/><br/>Face à la multiplication des phénomènes climatiques extrêmes, à une raréfaction annoncée de certaines ressources et à l’accroissement des inégalités, des individus et des collectifs, publics ou privés, se mobilisent pour préserver notre patrimoine naturel et nous préparer à différents scénarios.</p>
       <section className='adaptContentSection'>
        <div className="adaptTextBlocks">
              <h2>En France</h2>
@@ -37,7 +37,7 @@ function Adapt() {
              </ul>
              </div>
         </section>
-        <p>Partisans de modèles économiques alternatifs, artistes engagés ou membres d’associations, partagez avec nous votre quotidien et votre vision pour un avenir durable lors de notre passage dans vos régions. Bénéficiez de tarifs réduits sur la couverture audiovisuelle et photographique de vos représentations, festivals et évènements.</p>
+        <p className="adaptText">Partisans de modèles économiques alternatifs, artistes engagés ou membres d’associations, partagez avec nous votre quotidien et votre vision pour un avenir durable lors de notre passage dans vos régions. Bénéficiez de tarifs réduits sur la couverture audiovisuelle et photographique de vos représentations, festivals et évènements.</p>
         <section className='adaptContentSection'>
        <div className="adaptTextBlocks">
              <h2>Participer à une expérience collaborative</h2>

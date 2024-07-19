@@ -23,7 +23,8 @@
         padding-right:5px;
       }
       
-    .footerText{font-size: clamp(0.1em, 1vw + 0.5rem, 0.9rem)}
+    .footerText{font-size: clamp(0.1em, 1vw + 0.5rem, 0.9rem);
+      color:var(--primaryColor);}
 
   }
   
