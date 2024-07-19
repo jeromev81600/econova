@@ -12,10 +12,8 @@
     justify-content: center;
     width: 100%;
 
-    p{
-     text-align: center;
-     width: 55%;
-    }
+  p{text-align: center;
+    width: 85%;}
   
     .adaptContentSection{
       display: flex;
@@ -74,18 +72,26 @@
   /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
   
   @media screen and (min-width: 768px) {
+    .adaptMainDiv {p{
+      width: 80%;
+     }
     .adaptTextBlocks{ min-height: 28.5em;}
-  }
+  }}
   
   /* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
   
   @media screen and (min-width: 1080px) {
-   
+    .adaptMainDiv {p{
+      width: 90%;
+     }}
   }
   
   /* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
   
   @media screen and (min-width: 1400px) {
+    .adaptMainDiv {p{
+      width: 65%;
+     }}
   }
   
   /* ---------------------------------------- [ LARGE SCREEN - HD ] ------------------------------------------ */

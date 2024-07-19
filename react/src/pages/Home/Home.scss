@@ -11,10 +11,7 @@
   justify-content: center;
   width: 100%;
 
-  p{
-    text-align: center;
-    width: 70%;
-   }
+  p{text-align: center;}
 
   .homeTitle{
     font-family: var(--fontFamilyHome);
@@ -48,6 +45,9 @@
 /* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
 
 @media screen and (min-width: 1400px) {
+  .homeMainDiv p{
+    width: 65%;
+   }
 }
 
 /* ---------------------------------------- [ LARGE SCREEN - HD ] ------------------------------------------ */
