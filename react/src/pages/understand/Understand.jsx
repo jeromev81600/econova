@@ -1,4 +1,4 @@
-import { sourcesofInspirationList,playAndLearn} from '../../Utils';
+import { sourcesofInspiration,playAndLearn} from '../../Utils';
 import './Understand.scss'
 import Navbar from '../../components/navbar/Navbar';
 import Footer from '../../components/footer/Footer';
@@ -13,8 +13,8 @@ function Understand() {
           <div className="understandTextBlocks">
              <h2>Nos sources d'inspiration</h2>
              <p>Et si on vérifiait la cohérence et la véracité des connaissances scientifiques sur le terrain ?</p>
-             <ul className="understandLists">
-             {sourcesofInspirationList.map(source => (
+             <ul className="understandLists" id="sourcesofInspirationList">
+             {sourcesofInspiration.map(source => (
               <li key={source.id} style={{ backgroundImage: `url(${source.icon})` }}>
                 <a href={source.link} target="_blank" rel="noopener noreferrer">
                   {source.sourceName}

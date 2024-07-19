@@ -66,6 +66,7 @@
     font-size:var(--fontSizeH1);
     font-family: var(--fontFamilyTitle);
     text-transform: uppercase;
+    text-align: center;
     margin-bottom: 1em;
   }
 
@@ -86,6 +87,11 @@
 
   a{text-decoration: none;
     color:var(--primaryColor);}
+
+    .line{
+      border:1px solid var(--primaryColor);
+      width:50%;
+    }
 }
 
  /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */

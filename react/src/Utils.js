@@ -1,12 +1,16 @@
+import ipbes from "./assets/logos/ipbes.ico";
+import ipcc from "./assets/logos/ipcc.png";
+import fresqueduclimat from "./assets/logos/fresqueduclimat.jpg";
+import fresquefrontieresplanetaires from "./assets/logos/fresquefrontieresplanetaires.png";
+import fresquebiodiversite from "./assets/logos/fresquebiodiversite.jpg";
+import fresqueoceane from "./assets/logos/fresqueoceane.png";
+import ademe from "./assets/logos/ademe.png";
+import onu from "./assets/logos/onu.png";
+import unesco from "./assets/logos/unesco.png";
+import adacc from "./assets/logos/adacc.jpg";
+import fresquenouveauxrecits from "./assets/logos/fresquenouveauxrecits.png";
 
-import ipbes from "./assets/icons/ipbes.ico";
-import ipcc from "./assets/icons/ipcc.png";
-import fresqueduclimat from "./assets/icons/fresqueduclimat.jpg";
-import fresquefrontieresplanetaires from "./assets/icons/fresquefrontieresplanetaires.png";
-import fresquebiodiversite from "./assets/icons/fresquebiodiversite.jpg";
-import fresqueoceane from "./assets/icons/fresqueoceane.png";
-
-const sourcesofInspirationList=[
+const sourcesofInspiration=[
     {
         id:1,
         sourceName:"benaboki IPBES Home page | IPBES secretariat",
@@ -48,6 +52,44 @@ const playAndLearn=[
     }
 ];
 
+const frenchAgencies=[
+    {
+        id:1,
+        sourceName:"ADEME - Les scénarios de l'agence de la transition écologique",
+        link:"https://www.ademe.fr/les-futurs-en-transition/les-scenarios/",
+        icon:ademe,
+    },
+];
+
+const internationalAgencies=[
+    {
+        id:1,
+        sourceName:"ONU - Les 17 objectifs de développement durable",
+        link:"https://www.un.org/sustainabledevelopment/fr/",
+        icon:onu,
+    },
+    {
+        id:2,
+        sourceName:"UNESCO",
+        link:"https://www.unesco.org/fr",
+        icon:unesco,
+    }
+];
+
+const collaborativeExperience=[
+    {
+        id:1,
+        sourceName:"Les Ateliers de l'Adaptation au Changement Climatique",
+        link:"https://ateliers-adaptationclimat.fr/",
+        icon:adacc,
+    },
+    {
+        id:2,
+        sourceName:"La fresque des nouveaux récits",
+        link:"https://www.fresquedesnouveauxrecits.org/",
+        icon:fresquenouveauxrecits,
+    }
+];
 
 
-export { sourcesofInspirationList,playAndLearn};
+export { sourcesofInspiration,playAndLearn,frenchAgencies,internationalAgencies,collaborativeExperience};

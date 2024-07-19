@@ -6,55 +6,92 @@
 
 /*||- Titre -||*/
 .adaptMainDiv {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+
+  p{text-align: center;
+    width: 85%;}
   
-    .adaptTextBlock{
+    .adaptContentSection{
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      justify-content:center;
+      align-items: start;
+      flex-wrap: wrap;
       text-align: center;
       padding:2em;
       gap:3em;
     
-    .adaptBuildBlock{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      border-top: 1px solid whitesmoke;
-      border-bottom: 1px solid whitesmoke;
-      border-radius: 5px;
-      max-width:50%;
-    
-    .adaptBuildText{
-      color:black;
-      font-size: var(--fontSizeText);
-      font-family: var(--fontFamilyText);
-      font-weight: bold;
-      padding:5%;
-      width: clamp(15rem, 36.5vw + 1rem, 28rem);
-    }}
+      .adaptTextBlocks{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:center;
+        border:1px solid var(--primaryColor);
+        backdrop-filter: var(--bgBlur);
+        background:var(--bgGradient);
+        box-shadow: var(--shadow);
+        border-radius: 5px;
+        max-width: 20em;
+        min-height: 14em;
+        padding: 2em;
+        gap:1em;
+
+        .divCO2{
+          display: flex;
+          justify-content:flex-start;
+          gap:1em;
+        .co2Img{width: 2em;}}
+
+        h2{text-align: center;
+          margin-bottom:1em;}
+  
+          .adaptLists{
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            gap:4em;
+            padding: 0;          
+            margin: 0;
+  
+            li{  
+              background-repeat: no-repeat;
+              background-size: contain;
+              border-radius: 5px;
+              height: 2em;
+              max-height: 2em;
+              padding-left: 2.5em;
+            }
+          }
+      }
+      #internationalAgenciesList{gap:4.5em;}
     }}
   
   /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
   
   @media screen and (min-width: 768px) {
-  
-  }
+    .adaptMainDiv {p{
+      width: 80%;
+     }
+    .adaptTextBlocks{ min-height: 28.5em;}
+  }}
   
   /* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
   
   @media screen and (min-width: 1080px) {
-   
+    .adaptMainDiv {p{
+      width: 90%;
+     }}
   }
   
   /* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
   
   @media screen and (min-width: 1400px) {
+    .adaptMainDiv {p{
+      width: 65%;
+     }}
   }
   
   /* ---------------------------------------- [ LARGE SCREEN - HD ] ------------------------------------------ */

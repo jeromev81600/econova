@@ -6,33 +6,32 @@
 
 /*||- Titre -||*/
 .understandMainDiv {
+    display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-  
+
     .understandContentSection{
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
-      align-items:flex-start;
+      align-items:start;
       justify-content: center;
       text-align:start;
       padding:2em;
-      gap:3em;   
+      gap:3.5em;   
 
       .understandTextBlocks{
         display:flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items:flex-start;
+        align-items:center;
         border:1px solid var(--primaryColor);
         backdrop-filter: var(--bgBlur);
         background:var(--bgGradient);
         box-shadow: var(--shadow);
         border-radius: 5px;
         max-width: 20em;
-        min-height: 28.5em;
         padding: 2em;
         gap:1em;
 
@@ -43,7 +42,7 @@
           display: flex;
           flex-direction: column;
           text-align: start;
-          gap:3em;
+          gap:2.5em;
           padding: 0;          
           margin: 0;
 
@@ -57,11 +56,14 @@
           }
         }
       }
+      #sourcesofInspirationList{gap:4.5em;}
     }}
   
   /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
   
   @media screen and (min-width: 768px) {
+    .understandTextBlocks{
+    min-height: 28.5em;}
   }
   
   /* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
