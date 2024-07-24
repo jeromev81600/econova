@@ -13,7 +13,7 @@
     top: 0;
     left: 0;
     max-height: 9em;
-    padding: 0.5em 1em;
+    padding: 0.5em 1.2em 0.5em 1.2em;
     z-index: 5;
   
     .navbarLinksBlock {
@@ -28,12 +28,14 @@
       &.open {
         display: flex;
         position: fixed;
-        top: 110px;
+        top: 115px;
         right: 0;
         background-color: black;
-        width: 30vw;
+        width: 40vw;
         min-width: 130px;
-        height: calc(35vh - 70px);
+        max-width: 230px;
+        max-height: 17em;
+        height: calc(50vh - 70px);
         z-index: 5;
         gap:1em;
         border-radius: 5px;
@@ -94,16 +96,24 @@
     }
   }
   
+ /* --------------------------------------- [ large-format mobiles ] ----------------------------------------- */
+  
+ @media screen and (min-height: 855px) {
+  .navBar {
+    .navbarLinksBlock {   
+      &.open {
+      padding-top: 1em;
+      padding-bottom: 1.5em;
+      height: calc(37vh - 70px);
+   }
+    }
+}}
+
   /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
   
   @media screen and (min-width: 768px) {
     .navBar {
       padding: 0.5em 2em;        
-      .navbarLinksBlock {
-        &.open {
-          height: calc(40vh - 70px);
-      }
-  }
 }}
   /* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
   
@@ -112,7 +122,7 @@
       padding: 0 0 0 2em;
       .navbarLinksBlock {
         display: flex;
-        padding: 5%;
+        padding: 5% 3% 5% 5%;
         align-items: center;
         justify-content: flex-end;
         width: 80%;
