@@ -6,39 +6,61 @@
 
 /*||- Titre -||*/
 .actMainDiv {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 
-    .actTextBlock{
-      display: flex;
+.actText{text-align: center;
+  width: 85%;}
+
+  .actContentSection{
+    display: flex;
+    justify-content:center;
+    align-items: start;
+    flex-wrap: wrap;
+    text-align: center;
+    padding:2em;
+    gap:3em;
+  
+    .actTextBlocks{
+      display:flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding:2em;
-      gap:3em;
-    
-    .actBuildBlock{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      border-top: 1px solid whitesmoke;
-      border-bottom: 1px solid whitesmoke;
+      justify-content: flex-start;
+      align-items:center;
+      border:1px solid var(--primaryColor);
+      backdrop-filter: var(--bgBlur);
+      background:var(--bgGradient);
+      box-shadow: var(--shadow);
       border-radius: 5px;
-      max-width:50%;
-    
-    .actBuildText{
-      color:black;
-      font-size: var(--fontSizeText);
-      font-family: var(--fontFamilyText);
-      font-weight: bold;
-      padding:5%;
-      width: clamp(15rem, 36.5vw + 1rem, 28rem);
-    }}}
-  }
+      max-width: 20em;
+      min-height: 14em;
+      padding: 2em;
+      gap:1em;
+
+      h2{text-align: center;
+        margin-bottom:1em;}
+
+        .actLists{
+          display: flex;
+          flex-direction: column;
+          text-align: start;
+          gap:4em;
+          padding: 0;          
+          margin: 0;
+
+          li{  
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 5px;
+            height: 2em;
+            max-height: 2em;
+            padding-left: 2.5em;
+          }
+        }
+    }
+  }}
   
   /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
   
