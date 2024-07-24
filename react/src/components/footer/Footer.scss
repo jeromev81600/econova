@@ -8,36 +8,63 @@
 .footerDiv {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content:space-between;
     width: 100%;
     min-height: 4em;
     background-color: black;
-    padding-left:1em;
+    padding:0 0.5em 0 1em;
     position: fixed;
     bottom: 0;
     left: 0;
 
-    .copyright {
+    .footerTextBlock{
+      display: flex;
+
+     .copyright {
         color: var(--primaryColor);
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding-right:5px;
       }
       
-    .footerText{font-size: clamp(0.1em, 1vw + 0.5rem, 0.9rem);
+     .footerText{font-size: 0.60em;
       color:var(--primaryColor);}
-
+    }
+    
+    .scroll-to-top {
+      background-color: #000;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      svg {
+        fill: #fff;
+      }
+    }
   }
   
  /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
 
 @media screen and (min-width: 768px) {
-
-}
+  .footerDiv{ padding:0 1.5em 0 1em;
+    .footerTextBlock{
+      
+      .copyright {
+        color: var(--primaryColor);
+        font-size: 1.5rem;
+        padding-right:5px;
+      }
+      
+     .footerText{font-size: clamp(0.1em, 1vw + 0.5rem, 0.9rem);
+      color:var(--primaryColor);}}
+    }}
 
 /* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
 
 @media screen and (min-width: 1080px) {
- 
+  .footerDiv{ padding:0 1.8em 0 1em;}
 }
 
 /* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
