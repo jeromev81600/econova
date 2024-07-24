@@ -9,6 +9,10 @@ import onu from "./assets/logos/onu.png";
 import unesco from "./assets/logos/unesco.png";
 import adacc from "./assets/logos/adacc.jpg";
 import fresquenouveauxrecits from "./assets/logos/fresquenouveauxrecits.png";
+import teamfortheplanet from "./assets/logos/teamfortheplanet.png";
+import oryx from "./assets/logos/oryx.png";
+import deuxtonnes from "./assets/logos/deuxtonnes.png";
+import nosviesbascarbone from "./assets/logos/nosviesbascarbone.png";
 
 const sourcesofInspiration=[
     {
@@ -91,5 +95,35 @@ const collaborativeExperience=[
     }
 ];
 
+const favoriteInitiatives=[
+    {
+        id:1,
+        sourceName:"Team for the planet",
+        link:"https://team-planet.com/fr",
+        icon:teamfortheplanet,
+    },
+    {
+        id:2,
+        sourceName:"Oryx",
+        link:"https://oryxchange.com/fr",
+        icon:oryx,
+    }
+];
 
-export { sourcesofInspiration,playAndLearn,frenchAgencies,internationalAgencies,collaborativeExperience};
+const recommendedWorkshops=[
+    {
+        id:1,
+        sourceName:"Les Ateliers 2tonnes",
+        link:"https://www.2tonnes.org/",
+        icon:deuxtonnes,
+    },
+    {
+        id:2,
+        sourceName:"",
+        link:"https://www.nosviesbascarbone.org/",
+        icon: nosviesbascarbone,
+    }
+];
+
+
+export { sourcesofInspiration,playAndLearn,frenchAgencies,internationalAgencies,collaborativeExperience,favoriteInitiatives,recommendedWorkshops};
