@@ -1,10 +1,10 @@
 import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Understand from "./pages/understand/Understand";
-import Adapt from "./pages/adapt/Adapt";
-import Act from "./pages/act/Act";
-import Adhere from "./pages/adhere/Adhere";
-import Contact from "./pages/contact/Contact";
+import Understand from "./pages/Understand/Understand";
+import Adapt from "./pages/Adapt/Adapt";
+import Act from "./pages/Act/Act";
+import Adhere from "./pages/Adhere/Adhere";
+import Contact from "./pages/Contact/Contact";
 import './App.scss'
 
 function App() {

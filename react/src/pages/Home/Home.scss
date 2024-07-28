@@ -14,12 +14,6 @@
 
   .homeText{text-align: center;}
 
-  .homeTitle{
-    font-family: var(--fontFamilyHome);
-    font-size:clamp(2.5rem, 3vw + 0.5rem, 4.7rem);
-    text-transform:none;
-  }
-
 .homeContentSection{
   display: flex;
   flex-direction: column;

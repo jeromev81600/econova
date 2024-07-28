@@ -1,7 +1,7 @@
 import {favoriteInitiatives,recommendedWorkshops} from '../../Utils';
 import './Act.scss'
-import Navbar from '../../components/navbar/Navbar';
-import Footer from '../../components/footer/Footer';
+import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footer';
 
 function Act() {
 
