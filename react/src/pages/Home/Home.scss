@@ -12,6 +12,12 @@
   justify-content: center;
   width: 100%;
 
+  .homeTitlesSections{
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.8rem);;
+    margin-bottom: 0.5em;}
+
+  .homeText{text-align: center;}
+ 
   .header {
     display: flex;
     flex-direction: column;
@@ -26,78 +32,116 @@
     }
   }
 
-  .homeText{text-align: center;}
+  .homeOffersSection{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   backdrop-filter: var(--bgBlur);
+   background:var(--bgGradient);
+   width: 100vw;
+   padding:6em 3em 8em 3em;
+   gap:2em;
 
-.homeOffersSection{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width:80%;
-  padding: 2em;
-  gap:3em;
-  }}
+   li{
+    width: 100%;
+    text-align: justify;}
+  }
+}
 
   /* --------------------------------------- [ large-format mobiles ] ----------------------------------------- */
   
  @media screen and (min-height: 850px) {
-  .homeMainDiv {.header {  
+  .homeMainDiv {
+    .header {  
     padding:6em 2em 20em 2em;
-  }
+   }
  }}
 
 /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
 
 @media screen and (min-width: 768px) {
-  .homeMainDiv {.header {
-    padding:12em 2em 25em 2em;
-    h2{
+  .homeMainDiv {
+
+    .header {
+      padding:12em 2em 25em 2em;
+    
+     h2{
       width:70%;
+     }
     }
-    }}
+
+    .homeOffersSection{
+      padding:6em 4em 8em 4em;
+    }
+  }
 }
 
 /* -------------------------------------------- [ KINDLES ] ---------------------------------------------- */
 
 @media screen and (min-height: 1100px) {
-  .homeMainDiv {.header {  
+  .homeMainDiv {
+    .header {  
     padding:14em 2em 34em 2em;
-  }
- }}
+   }
+ }
+}
 
 /* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
 
 @media screen and (min-width: 1080px) {
-  .homeMainDiv {.header {
-    padding:8em 2em 19em 2em;
-    h2{
+  .homeMainDiv {
+
+    .homeTitlesSections{
+      margin-bottom: 1em;}
+
+    .header {
+     padding:8em 2em 19em 2em;
+
+     h2{
       width:60%;
+     }
     }
-    }}
+
+    .homeOffersSection{
+      padding:6em 7em 8em 7em;
+    }
+
+  }
 }
 
 /* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
 
 @media screen and (min-width: 1400px) {
-  .homeMainDiv 
-  .header {
+  .homeMainDiv{
+
+   .homeText{
+     width: 65%;
+    }
+
+   .header {
     padding:9em 2em 19em 2em;
-    h2{
+     h2{
       width:60%;
+     }
     }
+
+    .homeOffersSection{
+      padding:6em 14em 8em 14em;
     }
-  .homeText{
-    width: 65%;
-   }
+  }
 }
 
 /* ---------------------------------------- [ LARGE SCREEN - HD ] ------------------------------------------ */
 
 @media screen and (min-width: 1600px) {
-  .homeMainDiv {.header {
-    h2{
+  .homeMainDiv {
+    .header {
+      
+      h2{
       width:36.5%;
+      }
     }
-    }}
+  }
 }

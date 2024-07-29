@@ -13,8 +13,11 @@ function Home() {
     <p className="homeText">En faisant appel à nos services, vous vous engagez à faire grandir un écosystème impliqué à 100 % dans la préservation de l’environnement et le développement durable.</p>
     </header>
         <section className='homeOffersSection'>
-         <p className="homeText">Matthias Vilanova, journaliste amateur et indépendant, s'aventure avec son sac à dos et ses caméras "sur les chemins de la Terre" pour vous offrir une immersion inédite **auprès de ceux qui œuvrent avec passion** pour la préservation de notre planète et le développement durable. 
-          Embarquez pour un voyage improvisé accux quatre coins du monde, à la découverte de paysages époustouflants et de rencontres insolites.</p>
+          <h2 className="homeTitlesSections">Nos offres</h2>
+          <ul>
+          <li className="homeText"><span>Production et réalisation de contenus audiovisuels ou photographiques</span> destinés à la promotion d’entreprises, institutions ou associations spécialisés dans les concepts inclusifs, la fabrication de matériaux biosourcés, le réemploi, le recyclage et l’ensemble des services permettant l’accélération de la transition vers un modèle plus vertueux.</li>
+          <li className="homeText"><span>Diffusion et création de campagnes d’influence</span> pour les professionnels participant à la formation d’un lobbying d’un nouveau genre, plus juste et équitable pour le vivant, dans les domaines de la Low-tech, High-tech, Deep-tech et même No-Tech. En tant que consommateur, vous pouvez aussi agir en modifiant vos habitudes d’achats et adhérer à notre modèle pour transformer l’économie. Suivez-nous lors de nos directs sur nos réseaux sociaux ou envoyez-nous vos vidéos (abonnés uniquement = adhérez). Nous serons là pour vous guider.</li>
+          </ul>
         </section>
         <Footer/>
     </div>

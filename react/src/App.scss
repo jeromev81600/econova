@@ -76,7 +76,7 @@
     font-family: var(--fontFamilyTitle);
   }
 
-  p,a {
+  p,a,li {
     color:black;
     font-family:var( --fontFamilyText);
     font-size:var(--fontSizeText);
@@ -85,7 +85,11 @@
     font-weight:600
   }
 
-  a{text-decoration: none;
+  li{
+    margin-bottom:3em;
+  }
+
+  a, span {text-decoration: none;
     color:var(--primaryColor);}
 
     .line{
