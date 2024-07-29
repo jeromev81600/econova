@@ -12,15 +12,23 @@
   justify-content: center;
   width: 100%;
 
-  .homeText{text-align: center;}
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    gap:2em;
+    padding:5em 2em 13em 2em;
 
-  .homeTitle{
-    font-family: var(--fontFamilyHome);
-    font-size:clamp(2.5rem, 3vw + 0.5rem, 4.7rem);
-    text-transform:none;
+    h2{
+      text-align: center;
+    }
   }
 
-.homeContentSection{
+  .homeText{text-align: center;}
+
+.homeOffersSection{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,22 +39,55 @@
   gap:3em;
   }}
 
+  /* --------------------------------------- [ large-format mobiles ] ----------------------------------------- */
+  
+ @media screen and (min-height: 850px) {
+  .homeMainDiv {.header {  
+    padding:6em 2em 20em 2em;
+  }
+ }}
+
 /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
 
 @media screen and (min-width: 768px) {
-
+  .homeMainDiv {.header {
+    padding:12em 2em 25em 2em;
+    h2{
+      width:70%;
+    }
+    }}
 }
+
+/* -------------------------------------------- [ KINDLES ] ---------------------------------------------- */
+
+@media screen and (min-height: 1100px) {
+  .homeMainDiv {.header {  
+    padding:14em 2em 34em 2em;
+  }
+ }}
 
 /* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
 
 @media screen and (min-width: 1080px) {
- 
+  .homeMainDiv {.header {
+    padding:8em 2em 19em 2em;
+    h2{
+      width:60%;
+    }
+    }}
 }
 
 /* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
 
 @media screen and (min-width: 1400px) {
-  .homeMainDiv .homeText{
+  .homeMainDiv 
+  .header {
+    padding:9em 2em 19em 2em;
+    h2{
+      width:60%;
+    }
+    }
+  .homeText{
     width: 65%;
    }
 }
@@ -54,5 +95,9 @@
 /* ---------------------------------------- [ LARGE SCREEN - HD ] ------------------------------------------ */
 
 @media screen and (min-width: 1600px) {
- 
+  .homeMainDiv {.header {
+    h2{
+      width:36.5%;
+    }
+    }}
 }

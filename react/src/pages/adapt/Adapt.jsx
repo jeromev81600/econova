@@ -1,7 +1,7 @@
 import {frenchAgencies,internationalAgencies,collaborativeExperience} from '../../Utils';
 import './Adapt.scss'
-import Navbar from '../../components/navbar/Navbar';
-import Footer from '../../components/footer/Footer';
+import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footer';
 import CO2 from "../../assets/logos/CO2.png";
 
 function Adapt() {

@@ -1,7 +1,7 @@
 import { sourcesofInspiration,playAndLearn} from '../../Utils';
 import './Understand.scss'
-import Navbar from '../../components/navbar/Navbar';
-import Footer from '../../components/footer/Footer';
+import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footer';
 
 function Understand() {
 
