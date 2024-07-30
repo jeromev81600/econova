@@ -12,6 +12,13 @@
   justify-content: center;
   width: 100%;
 
+  .homeTitlesSections{
+    margin-bottom: 0.5em;
+    text-align: center;}
+
+  .homeText{text-align: justify;
+    width: 100%;}
+ 
   .header {
     display: flex;
     flex-direction: column;
@@ -21,83 +28,199 @@
     gap:2em;
     padding:5em 2em 13em 2em;
 
-    h2{
+    p{text-align: center;}
+    
+    h3{
       text-align: center;
     }
   }
 
-  .homeText{text-align: center;}
+  .homeOffersSection{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   backdrop-filter: var(--bgBlur);
+   background:var(--bgGradient);
+   width: 100vw;
+   padding:6em 3em 4em 3em;
+   gap:2em;
 
-.homeOffersSection{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width:80%;
-  padding: 2em;
-  gap:3em;
-  }}
+   li{
+    text-align: justify;
+    margin-bottom:4em;
+    }
+  }
+
+  .homeAmbitionsSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding:6em 3em 4em 3em;
+    gap:2em;
+    
+    ul{margin-left: 2em;}
+    
+    li{
+     text-align: justify;
+     margin-bottom:2.5em;
+     list-style:disc;
+     }
+   }
+
+   .homeUpcomingEventsSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: var(--bgBlur);
+    background:var(--bgGradient);
+    width: 100vw;
+    padding:6em 3em 4em 3em;
+    gap:2em;
+   }
+  }
 
   /* --------------------------------------- [ large-format mobiles ] ----------------------------------------- */
   
  @media screen and (min-height: 850px) {
-  .homeMainDiv {.header {  
+  .homeMainDiv {
+    .header {  
     padding:6em 2em 20em 2em;
-  }
- }}
+   }
+ }
+}
 
 /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
 
 @media screen and (min-width: 768px) {
-  .homeMainDiv {.header {
-    padding:12em 2em 25em 2em;
-    h2{
+  .homeMainDiv {
+
+    .header {
+      padding:12em 4em 25em 4em;
+    
+     h3{
       width:70%;
+     }
     }
-    }}
+
+    .homeOffersSection{
+      padding:6em 4em 4em 4em;
+    }
+
+    .homeAmbitionsSection{
+      padding:6em 4em 4em 4em;
+      ul{margin-left: 4em;}
+    }
+
+    .homeUpcomingEventsSection{
+      padding:6em 4em 4em 4em;
+    }
+  }
 }
 
 /* -------------------------------------------- [ KINDLES ] ---------------------------------------------- */
 
 @media screen and (min-height: 1100px) {
-  .homeMainDiv {.header {  
-    padding:14em 2em 34em 2em;
+  .homeMainDiv {
+    .header {  
+    padding:14em 15em 34em 15em;
+   }
+
+   .homeOffersSection{
+    padding:6em 4em 8em 4em;
   }
- }}
+
+  .homeAmbitionsSection{
+    padding:6em 4em 8em 4em;
+  }
+
+  .homeUpcomingEventsSection{
+    padding:6em 4em 8em 4em;
+  }
+ }
+}
 
 /* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
 
 @media screen and (min-width: 1080px) {
-  .homeMainDiv {.header {
-    padding:8em 2em 19em 2em;
-    h2{
+  .homeMainDiv {
+
+    .homeTitlesSections{
+      margin-bottom: 1em;}
+
+    .header {
+     padding:8em 15em 19em 15em;
+
+     h3{
       width:60%;
+     }
     }
-    }}
+
+    .homeOffersSection{
+      padding:6em 7em 8em 7em;
+    }
+
+    .homeAmbitionsSection{
+      padding:6em 7em 8em 7em;
+    }
+
+    .homeUpcomingEventsSection{
+      padding:6em 7em 8em 7em;
+    }
+ }
 }
 
 /* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
 
 @media screen and (min-width: 1400px) {
-  .homeMainDiv 
-  .header {
-    padding:9em 2em 19em 2em;
-    h2{
+  .homeMainDiv{
+
+   .header {
+    padding:9em 15em 19em 15em;
+     h3{
       width:60%;
+     }
     }
+
+    .homeOffersSection{
+      padding:6em 14em 6em 14em;
     }
-  .homeText{
-    width: 65%;
-   }
+
+    .homeAmbitionsSection{
+      padding:6em 14em 6em 14em;
+    }
+
+    .homeUpcomingEventsSection{
+      padding:6em 14em 6em 14em;
+    }
+  }
 }
 
 /* ---------------------------------------- [ LARGE SCREEN - HD ] ------------------------------------------ */
 
 @media screen and (min-width: 1600px) {
-  .homeMainDiv {.header {
-    h2{
+  .homeMainDiv {
+    .header {
+      padding:9em 10em 19em 10em;
+      p{width: 60%;}
+      h3{
       width:36.5%;
+      }
     }
-    }}
+
+    .homeOffersSection{
+      padding:6em 20em 6em 20em;
+    }
+
+    .homeAmbitionsSection{
+      padding:6em 20em 6em 20em;
+    }
+
+    .homeUpcomingEventsSection{
+      padding:6em 14em 6em 14em;
+    }
+  }
 }
