@@ -34,10 +34,10 @@
         box-shadow: var(--shadow);
         border-radius: 5px;
         max-width: 20em;
-        padding: 2em;
+        padding: 2em 2em 3em 2em ;
         gap:1em;
 
-        h2{text-align: center;
+        h3{text-align: center;
         margin-bottom:1em;}
 
         .understandLists{
@@ -64,14 +64,13 @@
   /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
   
   @media screen and (min-width: 768px) {
-    .understandTextBlocks{
-    min-height: 28.5em;}
   }
   
   /* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
   
   @media screen and (min-width: 1080px) {
-   
+    .understandTextBlocks{
+      min-height: 30.5em;}
   }
   
   /* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
