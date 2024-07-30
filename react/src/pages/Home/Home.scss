@@ -13,9 +13,11 @@
   width: 100%;
 
   .homeTitlesSections{
-    margin-bottom: 0.5em;}
+    margin-bottom: 0.5em;
+    text-align: center;}
 
-  .homeText{text-align: justify;}
+  .homeText{text-align: justify;
+    width: 100%;}
  
   .header {
     display: flex;
@@ -38,7 +40,6 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   text-align: center;
    backdrop-filter: var(--bgBlur);
    background:var(--bgGradient);
    width: 100vw;
@@ -46,7 +47,6 @@
    gap:2em;
 
    li{
-    width: 100%;
     text-align: justify;
     margin-bottom:4em;
     }
@@ -55,16 +55,15 @@
   .homeAmbitionsSection{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    text-align: center;
     width: 100vw;
     padding:6em 3em 4em 3em;
     gap:2em;
- 
+    
     ul{margin-left: 2em;}
-    p{width: 100%;}
+    
     li{
-     width: 100%;
      text-align: justify;
      margin-bottom:2.5em;
      list-style:disc;
@@ -76,7 +75,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     backdrop-filter: var(--bgBlur);
     background:var(--bgGradient);
     width: 100vw;
@@ -168,17 +166,17 @@
     .homeAmbitionsSection{
       padding:6em 7em 8em 7em;
     }
-  }
+
+    .homeUpcomingEventsSection{
+      padding:6em 7em 8em 7em;
+    }
+ }
 }
 
 /* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
 
 @media screen and (min-width: 1400px) {
   .homeMainDiv{
-
-   .homeText{
-     width: 65%;
-    }
 
    .header {
     padding:9em 15em 19em 15em;
@@ -192,6 +190,10 @@
     }
 
     .homeAmbitionsSection{
+      padding:6em 14em 6em 14em;
+    }
+
+    .homeUpcomingEventsSection{
       padding:6em 14em 6em 14em;
     }
   }
@@ -215,6 +217,10 @@
 
     .homeAmbitionsSection{
       padding:6em 20em 6em 20em;
+    }
+
+    .homeUpcomingEventsSection{
+      padding:6em 14em 6em 14em;
     }
   }
 }

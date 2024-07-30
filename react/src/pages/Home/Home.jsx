@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import './Home.scss'
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
@@ -16,16 +17,16 @@ function Home() {
          <h2 className="homeTitlesSections">Nos offres</h2>
          <ul>
           <li className="homeText"><span>Production et réalisation de contenus audiovisuels ou photographiques</span> destinés à la promotion d’entreprises, institutions ou associations spécialisés dans les concepts inclusifs, la fabrication de matériaux biosourcés, le réemploi, le recyclage et l’ensemble des services permettant l’accélération de la transition vers un modèle plus vertueux.</li>
-          <li className="homeText"><span>Diffusion et création de campagnes d’influence</span> pour les professionnels participant à la formation d’un lobbying d’un nouveau genre, plus juste et équitable pour le vivant, dans les domaines de la Low-tech, High-tech, Deep-tech et même No-Tech. En tant que consommateur, vous pouvez aussi agir en modifiant vos habitudes d’achats et adhérer à notre modèle pour transformer l’économie. Suivez-nous lors de nos directs sur nos réseaux sociaux ou envoyez-nous vos vidéos (abonnés uniquement = adhérez). Nous serons là pour vous guider.</li>
+          <li className="homeText"><span>Diffusion et création de campagnes d’influence</span> pour les professionnels participant à la formation d’un lobbying d’un nouveau genre, plus juste et équitable pour le vivant, dans les domaines de la Low-tech, High-tech, Deep-tech et même No-Tech. En tant que consommateur, vous pouvez aussi agir en modifiant vos habitudes d’achats et adhérer à notre modèle pour transformer l’économie. Suivez-nous lors de nos directs sur nos réseaux sociaux ou envoyez-nous vos vidéos (abonnés uniquement = <Link to="/adhere">adhérez</Link>). Nous serons là pour vous guider.</li>
          </ul>
       </section>
       <section className='homeAmbitionsSection'>
          <h2 className="homeTitlesSections">Nos ambitions</h2>
          <p className="homeText"><span>Nos bénéfices seront intégralement réinvestis dans la création de notre futur média</span> avec des documentaires, émissions, interviews et reportages participatifs essentiellement dirigés pour répondre aux trois grandes thématiques reprises sur notre site :</p>
          <ul>
-          <li className="homeText"><span>La compréhension et l’apprentissage</span> à travers la transmission d’informations basées sur les études scientifiques de terrain (Comprendre),</li>
-          <li className="homeText"><span>L’adaptation</span> en mesurant les conséquences  de nos modes de vies et en repensant nos systèmes pour les rendre plus résilients (S’adapter),</li>
-          <li className="homeText"><span>L’action</span> pour promouvoir des solutions efficaces et inciter chacun d’entre nous à se mettre en mouvement (Agir),</li>
+          <li className="homeText"><span>La compréhension et l’apprentissage</span> à travers la transmission d’informations basées sur les études scientifiques de terrain (<Link to="/understand">Comprendre</Link>),</li>
+          <li className="homeText"><span>L’adaptation</span> en mesurant les conséquences  de nos modes de vies et en repensant nos systèmes pour les rendre plus résilients (<Link to="/adapt">S’adapter</Link>),</li>
+          <li className="homeText"><span>L’action</span> pour promouvoir des solutions efficaces et inciter chacun d’entre nous à se mettre en mouvement (<Link to="/act">Agir</Link>),</li>
          </ul>
          <p className="homeText">L’ensemble de nos prestations tout comme le fonctionnement de nos services sont assurés par une sélection de professionnels qualifiés et indépendants selon une charte bien définie (charte & collaborations).</p>
          <p className="homeText">Ce choix assumé encourage le respect et la bienveillance dans les collaborations grâce à des liens non-hiérarchisés permettant ainsi une plus grande liberté de travail et d’avantage de créativité mais aussi…</p>
