@@ -1,6 +1,7 @@
 import {frenchAgencies,internationalAgencies,collaborativeExperience} from '../../Utils';
 import './Adapt.scss'
 import Navbar from '../../components/Navbar/Navbar';
+import FooterTop from '../../components/Footer/FooterTop';
 import FooterBottom from '../../components/Footer/FooterBottom';
 import CO2 from "../../assets/logos/CO2.png";
 
@@ -57,6 +58,7 @@ function Adapt() {
              <a href="https://impactco2.fr/">Impact C0²</a></div>
           </div>
         </section>
+        <FooterTop/>
         <FooterBottom/>
     </div>
   )

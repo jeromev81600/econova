@@ -1,6 +1,7 @@
 import { sourcesofInspiration,playAndLearn} from '../../Utils';
 import './Understand.scss'
 import Navbar from '../../components/Navbar/Navbar';
+import FooterTop from '../../components/Footer/FooterTop';
 import FooterBottom from '../../components/Footer/FooterBottom';
 
 function Understand() {
@@ -39,7 +40,8 @@ function Understand() {
               ))}
             </ul>
           </div>
-        </section>     
+        </section>
+        <FooterTop/>     
         <FooterBottom/>
     </div>
   )
