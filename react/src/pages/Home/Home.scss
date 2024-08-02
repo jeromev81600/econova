@@ -12,6 +12,10 @@
   justify-content: center;
   width: 100%;
 
+  section{
+    min-height: 50em;
+  }
+
   .homeTitlesSections{
     margin-bottom: 0.5em;
     text-align: center;}
@@ -220,7 +224,7 @@
     }
 
     .homeUpcomingEventsSection{
-      padding:6em 14em 6em 14em;
+      padding:6em 20em 6em 20em;
     }
   }
 }

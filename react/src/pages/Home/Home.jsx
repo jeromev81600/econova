@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import './Home.scss'
 import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
+import FooterTop from '../../components/Footer/FooterTop';
+import FooterBottom from '../../components/Footer/FooterBottom';
 
 function Home() {
 
@@ -42,7 +43,8 @@ function Home() {
       <p className="homeText">Matthias Vilanova, journaliste amateur et indépendant, s'aventure avec son sac à dos et ses caméras "sur les chemins de la Terre" pour vous offrir une immersion inédite auprès de passionnés engagés pour la préservation de notre planète et de notre patrimoine.</p>
       <p className="homeText">Embarquez pour un voyage improvisé aux quatre coins du monde, à la découverte de paysages époustouflants et de rencontres insolites.</p>
       </section>
-      <Footer/>
+      <FooterTop/>
+      <FooterBottom/>
     </div>
   )
 }

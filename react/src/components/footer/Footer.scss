@@ -2,10 +2,41 @@
 
 /* --------------------------------------- [ MOBILE FIRST ] ----------------------------------------- */
 
-/*| ---------|- Page d'accueil -|-------- |*/
+/*||- Footer top -||*/
 
-/*||- Titre -||*/
-.footerDiv {
+.footerTopDiv{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  gap:4em;
+  flex-wrap: wrap;
+  background-color: black;
+  width: 100vw;
+  padding : 3.5em;
+
+  article{
+    width: 100%;
+    
+  .collaboratorsList{
+   margin:1em;
+
+   li{margin-bottom:1em;}
+  }
+
+  .footerText{font-size: clamp(0.1em, 1vw + 0.5rem, 0.7rem);
+    color:var(--primaryColor);
+  }
+
+  .footerSpans{font-weight: bold;
+    font-size: clamp(0.1em, 1vw + 0.5rem, 0.9rem);}
+}
+}
+
+
+/*||- Footer bottom -||*/
+
+.footerBottomDiv {
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -20,14 +51,14 @@
     .footerTextBlock{
       display: flex;
 
+      .footerText{font-size: clamp(0.1em, 1vw + 0.5rem, 0.9rem);
+        color:var(--primaryColor);}
+
      .copyright {
         color: var(--primaryColor);
         font-size: 1rem;
         padding-right:5px;
       }
-      
-     .footerText{font-size: 0.60em;
-      color:var(--primaryColor);}
     }
     
     .scroll-to-top {
@@ -43,28 +74,58 @@
         fill: #fff;
       }
     }
-  }
+}
   
  /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
 
 @media screen and (min-width: 768px) {
-  .footerDiv{ padding:0 1.5em 0 1em;
+/*||- Footer top -||*/
+
+.footerTopDiv{ 
+  align-items: start;
+  flex-direction: row;
+  gap:4em;
+  article{
+    width: calc(100% / 4);
+  }
+}
+
+.footerTopDiv article:nth-child(3) {
+  width: 30%;
+ }
+  /*||- Footer bottom -||*/
+
+  .footerBottomDiv{ padding:0 1.5em 0 1em;
     .footerTextBlock{
-      
       .copyright {
         color: var(--primaryColor);
         font-size: 1.5rem;
         padding-right:5px;
       }
-      
-     .footerText{font-size: clamp(0.1em, 1vw + 0.5rem, 0.9rem);
-      color:var(--primaryColor);}}
-    }}
+      }
+    }
+  }
 
 /* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
 
 @media screen and (min-width: 1080px) {
-  .footerDiv{ padding:0 1.8em 0 1em;}
+  
+  /*||- Footer top -||*/
+
+.footerTopDiv{ 
+  gap:6em;
+  article{
+     .footerText{text-align: justify;
+    }
+  }
+}
+
+.footerTopDiv article:nth-child(3) {
+  width: auto;
+ }
+  /*||- Footer bottom -||*/
+  
+  .footerBottomDiv{ padding:0 1.8em 0 1em;}
 }
 
 /* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
@@ -77,5 +138,3 @@
 @media screen and (min-width: 1600px) {
  
 }
-
-  
