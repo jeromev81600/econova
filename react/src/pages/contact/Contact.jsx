@@ -1,5 +1,6 @@
 import './Contact.scss'
 import Navbar from '../../components/Navbar/Navbar';
+import FooterTop from '../../components/Footer/FooterTop';
 import FooterBottom from '../../components/Footer/FooterBottom';
 
 function Contact() {
@@ -14,6 +15,7 @@ function Contact() {
           <p className='contactBuildText'> - Page en construction -<br/></p> 
           </div>
         </div>
+        <FooterTop/>
         <FooterBottom/>
     </div>
   )

@@ -1,6 +1,7 @@
 import {favoriteInitiatives,recommendedWorkshops} from '../../Utils';
 import './Act.scss'
 import Navbar from '../../components/Navbar/Navbar';
+import FooterTop from '../../components/Footer/FooterTop';
 import FooterBottom from '../../components/Footer/FooterBottom';
 
 function Act() {
@@ -36,6 +37,7 @@ function Act() {
              </ul>
         </div>
       </section>
+      <FooterTop/>
       <FooterBottom/>
     </div>
   )

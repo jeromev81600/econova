@@ -1,5 +1,6 @@
 import './Adhere.scss'
 import Navbar from '../../components/Navbar/Navbar';
+import FooterTop from '../../components/Footer/FooterTop';
 import FooterBottom from '../../components/Footer/FooterBottom';
 
 function Adhere() {
@@ -14,6 +15,7 @@ function Adhere() {
           <p className='adhereBuildText'> - Page en construction -<br/></p> 
           </div>
         </div>
+        <FooterTop/>
         <FooterBottom/>
     </div>
   )
