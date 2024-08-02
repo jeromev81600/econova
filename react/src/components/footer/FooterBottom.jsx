@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import './Footer.scss'
 import upArrow from "../../assets/icons/Up_Arrow_Icon.svg";
 
-function Footer() {
+function FooterBottom() {
     const location = useLocation();
 
     useEffect(() => {
@@ -15,7 +15,7 @@ function Footer() {
     };
 
   return (
-    <div className='footerDiv'>
+    <div className='footerBottomDiv'>
       <div className="footerTextBlock">   
       <p className="copyright">©</p>
       <p className="footerText">2024 Econova. Tous droits réservés.</p>
@@ -27,4 +27,4 @@ function Footer() {
   )
 }
 
-export default Footer;
+export default FooterBottom;
