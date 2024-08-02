@@ -8,13 +8,12 @@ function Contact() {
   return (
     <div className='contactMainDiv'>
       <Navbar/>
-      <div className='contactTextBlock'>
-          <h1>Contact</h1>
-         <p></p>
-         <div className='contactBuildBlock'>
-          <p className='contactBuildText'> - Page en construction -<br/></p> 
-          </div>
-        </div>
+      <h1>Contact</h1>
+      <section className='contactContentSection'>
+         <p className="contactText">Vous représentez une entreprise, une association ou une institution engagée dans la voie de la transition écologique et souhaitez faire appel à nos services de production, réalisation et montage photo ou vidéo ? </p>
+      <form><h3>Formulaire en construction<br/> bientôt disponible</h3>
+      </form>
+      </section>
         <FooterTop/>
         <FooterBottom/>
     </div>
