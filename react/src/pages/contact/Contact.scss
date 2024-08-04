@@ -35,32 +35,44 @@
   /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
   
   @media screen and (min-width: 768px) {
+    .contactMainDiv{
+
     .contactContentSection{
       padding:6em 4em 4em 4em;
     }
   }
+}
   
   /* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
   
   @media screen and (min-width: 1080px) {
-    .contactContentSection{
+    .contactMainDiv{
+      
+      .contactContentSection{
       padding:6em 7em 8em 7em;
     }
   }
+}
   
   /* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
   
   @media screen and (min-width: 1400px) {
-    .contactContentSection{
+    .contactMainDiv{
+      
+      .contactContentSection{
       padding:6em 14em 6em 14em;
     }
   }
+}
   
   /* ---------------------------------------- [ LARGE SCREEN - HD ] ------------------------------------------ */
   
   @media screen and (min-width: 1600px) {
-    .contactContentSection{
+    .contactMainDiv{
+      
+      .contactContentSection{
       padding:6em 20em 6em 20em;
+    }
     }
   }
   

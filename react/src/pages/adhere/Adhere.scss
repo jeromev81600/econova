@@ -8,56 +8,115 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-  
-    .adhereTextBlock{
+
+    .adhereText{text-align: justify;
+      width: 100%;}
+
+    section{
+      min-height: 50em;
+    }
+
+    .adhereTitlesSections{
+      margin-bottom: 0.5em;
+      text-align: center;
+    }
+
+    .adhereCharterSection{
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      padding:2em;
-      gap:3em;
-    
-    .adhereBuildBlock{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      border-top: 1px solid whitesmoke;
-      border-bottom: 1px solid whitesmoke;
-      border-radius: 5px;
-      max-width:50%;
-    
-    .adhereBuildText{
-      color:black;
-      font-size: var(--fontSizeText);
-      font-family: var(--fontFamilyText);
-      font-weight: bold;
-      padding:5%;
-      width: clamp(15rem, 36.5vw + 1rem, 28rem);
-    }}
-    }}
+      text-align: justify;
+      width: 100vw;
+      padding:6em 3em 4em 3em;
+      gap:2em;
+
+     ul{margin-left: 2.5em;}
+
+     li{
+      text-align: justify;
+      margin-bottom:1em;
+      list-style:disc;
+     }
+   }
+
+   .adhereFundingSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    backdrop-filter: var(--bgBlur);
+    background:var(--bgGradient);
+    width: 100vw;
+    padding:6em 3em 4em 3em;
+    gap:2em;
+
+    h3{
+      margin-top:2em;
+      width: 100%;
+      text-align:left;}
+   }
+  }
   
   /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
   
   @media screen and (min-width: 768px) {
-  
+    .adhereMainDiv{
+
+    .adhereCharterSection{
+      padding:6em 4em 4em 4em;
+    }
+
+    .adhereFundingSection{
+      padding:6em 4em 4em 4em;
+    }
   }
+}
   
   /* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
   
   @media screen and (min-width: 1080px) {
-   
+    .adhereMainDiv{
+
+      .adhereCharterSection{
+        padding:6em 7em 8em 7em;
+      }
+
+      .adhereFundingSection{
+        padding:6em 7em 8em 7em;
+      }
+    }
   }
   
   /* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
   
   @media screen and (min-width: 1400px) {
+    .adhereMainDiv{
+
+      .adhereCharterSection{
+        padding:6em 14em 6em 14em;
+      }
+
+      .adhereFundingSection{
+        padding:6em 14em 6em 14em;
+      }
+    }
   }
   
   /* ---------------------------------------- [ LARGE SCREEN - HD ] ------------------------------------------ */
   
   @media screen and (min-width: 1600px) {
+    .adhereMainDiv{
+
+      .adhereCharterSection{
+        padding:6em 20em 6em 20em;
+      }
+
+      .adhereFundingSection{
+        padding:6em 20em 6em 20em;
+      }
+    }
    
   }
   
