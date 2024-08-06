@@ -92,7 +92,7 @@
     margin-bottom: 0.5em;
   }
 
-  p,a,li {
+  p,li {
     color:black;
     font-family:var( --fontFamilyText);
     font-size:var(--fontSizeText);
@@ -101,8 +101,15 @@
     font-weight:600
   }
 
-  a, span {text-decoration: none;
-    color:var(--primaryColor);}
+  a, span {
+    color:var(--primaryColor);
+    text-decoration: none;
+    font-family:var( --fontFamilyText);
+    font-size:var(--fontSizeText);
+    letter-spacing: 0.1rem;
+    line-height :1.5rem;
+    font-weight:600;
+   }
 
     .line{
       border:1px solid var(--primaryColor);
