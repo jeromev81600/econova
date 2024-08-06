@@ -12,41 +12,55 @@
     justify-content: center;
     width: 100%;
 
-  .adaptText{text-align: center;
-    width: 85%;}
+  #adaptMainSpans{margin-bottom:1em;}
+    
+  .adaptText, #adaptMainSpans{text-align: justify;
+    width: 100%;}
   
     .adaptContentSection{
       display: flex;
+      flex-direction: column;
       justify-content:center;
-      align-items: start;
+      align-items: center;
       flex-wrap: wrap;
-      text-align: center;
-      padding:2em;
-      gap:3em;
-    
-      .adaptTextBlocks{
+      width: 100vw;
+      padding:6em 3em 4em 3em;
+      gap:2em;
+
+      h3{text-align: center;
+        margin-bottom:1em;}
+
+      .adaptcardsGroups{
         display:flex;
         flex-direction: column;
-        justify-content: flex-start;
         align-items:center;
-        border:1px solid var(--primaryColor);
-        backdrop-filter: var(--bgBlur);
-        background:var(--bgGradient);
-        box-shadow: var(--shadow);
-        border-radius: 5px;
-        max-width: 20em;
-        min-height: 15em;
-        padding: 2em 2em 3em 2em;
-        gap:1em;
+        justify-content: center;
+        gap:2.5em;
+        width: 100%;
+      
+       .adaptcardsBlocks{
+         display:flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items:center;
+         border:1px solid var(--primaryColor);
+         backdrop-filter: var(--bgBlur);
+         background:var(--bgGradient);
+         box-shadow: var(--shadow);
+         border-radius: 5px;
+         max-width: 20em;
+         min-height: 15em;
+         padding: 2em 2em 3em 2em;
+         gap:1em;
 
         .divCO2{
           display: flex;
+          align-items:start;
           justify-content:flex-start;
           gap:1em;
-        .co2Img{width: 2em;}}
 
-        h3{text-align: center;
-          margin-bottom:1em;}
+        .co2Img{width: 2em;}}
+     
   
           .adaptLists{
             display: flex;
@@ -65,42 +79,57 @@
               padding-left: 2.5em;
             }
           }
-      }
+        }
       #internationalAgenciesList{gap:4.5em;}
-    }}
+    }
+    }
+  }
   
   /* --------------------------------------- [ TABLETS / KINDLES ] ----------------------------------------- */
   
   @media screen and (min-width: 768px) {
     .adaptMainDiv {
-      .adaptText{
-      width: 80%;
-     }
-     .adaptContentSection{
-    .adaptTextBlocks{ min-height: 21em;}
+      .adaptContentSection{
+        padding:6em 4em 4em 4em;
+        .adaptcardsGroups{
+          flex-direction: row;
+        .adaptcardsBlocks{ 
+          min-height: 21em;}
   }
+}
 }
 }
   
   /* -------------------------------------------- [ NOTEBOOK ] ----------------------------------------------- */
   
   @media screen and (min-width: 1080px) {
-    .adaptMainDiv {.adaptText{
-      width: 90%;
-     }}
+    .adaptMainDiv {
+      .adaptContentSection{
+        padding:6em 7em 8em 7em;
+        .adaptcardsGroups{
+          gap:4em;
+        }
+     }
+    }
   }
   
   /* --------------------------------------- [ DESKTOP ] ----------------------------------------- */
   
   @media screen and (min-width: 1400px) {
-    .adaptMainDiv {.adaptText{
-      width: 65%;
-     }}
+    .adaptMainDiv {
+      .adaptContentSection{
+        padding:6em 14em 6em 14em;
+     }
+    }
   }
   
   /* ---------------------------------------- [ LARGE SCREEN - HD ] ------------------------------------------ */
   
   @media screen and (min-width: 1600px) {
-   
+    .adaptMainDiv {
+      .adaptContentSection{
+        padding:6em 20em 6em 20em;
+     }
+    }
   }
   
